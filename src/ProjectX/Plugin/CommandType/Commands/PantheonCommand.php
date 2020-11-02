@@ -122,14 +122,14 @@ class PantheonCommand extends PluginCommandTaskBase
     }
 
     /**
-     * Import the local database with the remote pantheon site.
+     * Import your local database on a remote environment. THIS IS DESTRUCTIVE!
      *
      * @param string $dbFile
      *   The local path to the database file.
      * @param string $siteEnv
      *   The pantheon site environment.
      */
-    public function pantheonImport(
+    public function pantheonRemoteImport(
         string $dbFile = null,
         string $siteEnv = 'dev'
     ): void {
