@@ -328,7 +328,7 @@ class PantheonCommand extends PluginCommandTaskBase
     }
 
     /**
-     *  Sync the remote pantheon database with the local environment.
+     *  Replace your local database with one from a remote environment.
      *
      * @param string $siteEnv
      *   The environment to sync the database from e.g (dev, test, live).
@@ -338,7 +338,7 @@ class PantheonCommand extends PluginCommandTaskBase
      * @option $filename
      *   The filename of the remote database that's downloaded.
      */
-    public function pantheonSync(string $siteEnv = null, $opts = [
+    public function pantheonLocalSync(string $siteEnv = null, $opts = [
         'no-backup' => false,
         'filename' => 'remote.db.sql.gz'
     ]): void
